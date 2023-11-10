@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Super Mario</title>
+</head>
+
+<body>
+
+    <div class="video-mario">
+        <video src="img/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+        <img class="logo" src="./img/logo (1).png" src="logo">
+        <p>Encanadores Mario e Luigi - Resolvendo Seus Problemas Com Estilo</p>
+        <p>Você ja se encontrou em uma situação de emergencia com encanadores?Vazamentos inesperador,canos entupidos ou
+            torneira que nao param de pingar?Não se preocupe porque estamois aqui para salvar o seu dia! Apresentamos a
+            vocês as encanadores mais famosos
+            do Reino dos Cogumelos - Mario e Luigi!
+            <br>
+            <button onclick="cliqueiNoBotao()">ENTRE EM CONTATO</button>
+    </div>
+
+    <img class="Mario" src="./img/mario.png">
+
+    <form class="formulario" action="https://formsubmit.co/allex.z@hotmail.com" method="POST">
+        <input type="text" placeholder="Nome Completo" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea cols="30" rows="5" placeholder="Deixe sua mensagem aqui..." required></textarea>
+        <button onclick="sumirFormulario()" type="submit">ENVIAR MENSAGEM</button>
+    </form>
+
+    <div class="mascara-form"></div>
+
+</body>
+<script>
+
+    let formulario = document.querySelector(".formulario")
+    let mascarafom = document.querySelector(".mascara-form")
+    
+
+    function cliqueiNoBotao() {
+        formulario.style.opacity = 1
+        mascarafom.style.opacity = 0.3
+    }
+
+    function sumirFormulario() {
+        formulario.style.opacity = 0
+        mascarafom.style.opacity = 1
+    }
+    
+</script>
+
+</html>
